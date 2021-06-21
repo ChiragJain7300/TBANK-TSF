@@ -4,7 +4,7 @@ const app = express()
 const path = require('path');
 const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
-const port = 80;
+
 
 
 
@@ -51,6 +51,11 @@ app.get('/', (req, res) => {
 
 
 // START LIVE SERVER
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 80;
+}
+
 app.listen(port, () => {
     console.log(`website running on port ${port}`);
 });
