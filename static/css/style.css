@@ -1,0 +1,387 @@
+/* font-family: 'Merienda', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+
+/* font-family: 'Bangers', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* font-family: 'Comfortaa', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    color: #14274E;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ECF2F9;
+}
+
+#nav {
+    width: 100%;
+    top: 0;
+}
+
+#fixednav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: #F4F9F9;
+}
+
+#navbar {
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    flex-wrap: flex;
+}
+
+#section {
+    display: flex;
+    height: 72.3vh;
+    width: 100%;
+}
+
+#section::before {
+    content: "";
+    background: url("/static/images/bodyBack.png") no-repeat center center;
+    background-size: 100% 80vh;
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+}
+
+#left {
+    box-sizing: border-box;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: baseline;
+    justify-content: center;
+    padding: 100px;
+    padding-left: 50px;
+    padding-right: 150px
+}
+
+#left h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.items {
+    list-style: none;
+    margin: auto 50px;
+}
+
+.items a {
+    list-style: none;
+    color: #14274E;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Comfortaa', cursive;
+}
+
+.items a:active {
+    text-decoration: underline;
+}
+
+.items a:hover {
+    text-decoration: underline;
+    color: #A7FF83;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo img {
+    height: 55px;
+    margin: auto 3px;
+}
+
+#logo a {
+    color: #17B978;
+    margin: auto 3px;
+    font-weight: 950;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.3rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socialdiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials a {
+    margin: 15px;
+}
+
+.socials a img {
+    height: 35px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.socialdiv h2,
+.contact h2 {
+    align-self: center;
+    text-decoration: underline;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email img {
+    height: 35px;
+    margin: 5px 10px;
+}
+
+.email p {
+    margin: 5px 10px;
+}
+
+.footer-first {
+    padding-top: 5px;
+    border-top: 1px solid #666666;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer {
+    background-color: #C9CBFF;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer1 {
+    background-color: #C9CBFF;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 70px;
+}
+
+#article h1,
+p,
+input {
+    margin: 0;
+}
+
+#article {
+    height: 91%;
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    justify-content: center;
+}
+
+.btn1 {
+    display: flex;
+    width: 15%;
+    height: 20%;
+    border: 2px solid black;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #A4EBF3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn1 a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #14274E;
+    font-family: 'Comfortaa', cursive;
+}
+
+.btn1:hover {
+    background-color: #CCF2F4;
+}
+
+.customersList {
+    width: 45%;
+    margin: 100px auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.customersListItem {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    background-color: #F7D9D9;
+    margin: 10px auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.customersListItem p {
+    text-align: justify;
+}
+
+.customersListItem h2 {
+    text-decoration: underline;
+}
+
+.hrline {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #14274E;
+}
+
+#detailBox {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #F7D9D9;
+    border: 2px solid black;
+    margin: 100px auto 40px auto;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+#detailBox h2 {
+    margin: 10px auto;
+    text-decoration: underline;
+}
+
+#detailBox .btn1 {
+    width: 35%;
+    margin: 25px 35px;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.box {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+}
+
+.box img {
+    height: 30px;
+    margin: auto 10px;
+}
+
+#detailBox h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#container {
+    margin-top: 25px;
+}
+
+.formTransfer {
+    padding: 20px;
+    width: 40%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.recordTable {
+    margin-top: 87px;
+}
+
+.copyright p {
+    text-align: center;
+}
+
+#container h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media screen and (max-width: 1054px) {
+    #navbar {
+        flex-direction: column;
+    }
+    .items {
+        align-self: baseline;
+        margin: 15px 50px;
+    }
+    #section::before {
+        opacity: 0.7;
+    }
+    #left {
+        box-sizing: border-box;
+        flex-direction: column;
+        display: flex;
+        width: 80%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0;
+    }
+    .footer-first {
+        flex-direction: column;
+    }
+    .email {
+        align-self: center;
+    }
+    #detailBox,
+    .customersList {
+        width: 90%;
+        margin: 300px auto 40px auto;
+    }
+    .btn1 {
+        width: 30%;
+    }
+    #detailBox .btn1 {
+        height: 35%;
+    }
+    .recordTable {
+        margin-top: 335px;
+    }
+    .formTransfer {
+        width: 90%;
+    }
+}
